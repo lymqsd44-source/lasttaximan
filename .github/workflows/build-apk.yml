@@ -29,11 +29,11 @@ jobs:
     - name: Decode Keystore
       run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android/app/qaramurt-keystore.jks
 
-    - name: Make gradlew executable
-      run: chmod +x ./android/gradlew
-
     - name: Build Signed APK
-      run: ./android/gradlew assembleRelease
+      run: |
+        cd android
+        chmod +x gradlew
+        ./gradlew assembleRelease
       env:
         STORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
         KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
