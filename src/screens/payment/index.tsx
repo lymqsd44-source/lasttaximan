@@ -17,7 +17,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, doc, onSnapshot } from "firebase/firestore";
 import { firebaseConfig } from "../../../firebase";
 import { Edit, Shield } from "@src/utils/icons";
-import NativeAdComponent from "@src/commonComponent/ads/google/NativeAdCard";
+//import NativeAdComponent from "@src/commonComponent/ads/google/NativeAdCard";
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
@@ -290,7 +290,7 @@ export function Payment() {
                 }}
               />
               {taxidoSettingData?.taxido_values?.ads?.native_enable == 1 && (
-                <NativeAdComponent heights={windowHeight(150)} adsHeight={windowHeight(60)} />
+                //<NativeAdComponent heights={windowHeight(150)} adsHeight={windowHeight(60)} />
               )}
               <View style={[styles.card2, { backgroundColor: bgFullStyle }]}>
                 <TotalFare

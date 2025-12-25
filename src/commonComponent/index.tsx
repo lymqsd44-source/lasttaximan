@@ -23,4 +23,4 @@ export * from "./notificationHelper";
 export * from "./barProgress";
 export * from "./formateDateTime";
 export * from "./RemoteSvgIcon";
-export * from "./ads/google/NativeAdCard"
+//export * from "./ads/google/NativeAdCard"

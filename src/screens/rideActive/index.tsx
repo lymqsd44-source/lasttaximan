@@ -22,7 +22,7 @@ import { requestLocationPermission } from "@src/components/helper/permissionHelp
 import { BottomSheetBackdrop, BottomSheetModal, BottomSheetModalProvider, BottomSheetView } from "@gorhom/bottom-sheet";
 import { getFirestore, doc, onSnapshot } from "firebase/firestore";
 import { AppDispatch } from "@src/api/store";
-import NativeAdComponent from "@src/commonComponent/ads/google/NativeAdCard";
+//import NativeAdComponent from "@src/commonComponent/ads/google/NativeAdCard";
 
 // Define types for location objects
 interface Location {
@@ -690,7 +690,7 @@ const selectedVehicle = vehicleTypedata?.find((v:any) =>
                   </TouchableOpacity>
                 </View>
                 {taxidoSettingData?.taxido_values?.ads?.native_enable == 1 && (
-                  <NativeAdComponent heights={windowHeight(150)} adsHeight={windowHeight(60)} />
+  //                <NativeAdComponent heights={windowHeight(150)} adsHeight={windowHeight(60)} />
                 )}                <View style={styles.cancelBtnView}>
                   <Button
                     title={translateData.cancelRide}
